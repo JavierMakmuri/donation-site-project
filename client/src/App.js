@@ -1,5 +1,5 @@
 import React from 'react';
-import Titles from './components/titles/titles.js';
+import Titles from './components/titles.js';
 
 function App() {
   return (
