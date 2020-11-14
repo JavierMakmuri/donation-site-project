@@ -1,32 +1,16 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+// This acts as a database of series/movie titles
 
-class Title extends Component {
-    constructor() {
-        super();
-        this.state = {
-            titles: []
-        }
-    }
+const titles = [
+    {id:1, title: "Attack On Titan",url:"https://cdn.myanimelist.net/images/anime/10/47347l.jpg"},
+    {id:2, title: "Sword Art Online",url:"https://cdn.myanimelist.net/images/anime/11/39717.jpg"},
+    {id:3, title: "Naruto",url:"https://cdn.myanimelist.net/images/anime/13/17405.jpg"},
+    {id:4, title: "Tokyo Ghoul",url:"https://cdn.myanimelist.net/images/anime/5/64449.jpg"},
+    {id:5, title: "Re:Zero",url:"https://cdn.myanimelist.net/images/anime/11/79410.jpg"},
+    {id:6, title: "One Piece",url:"https://cdn.myanimelist.net/images/anime/6/73245.jpg"},
+    {id:7, title: "My Hero Academia",url:"https://cdn.myanimelist.net/images/anime/10/78745.jpg"},
+    {id:8, title: "Demon Slayer",url:"https://cdn.myanimelist.net/images/anime/1286/99889.jpg"},
+    {id:9, title: "Konosuba",url:"https://cdn.myanimelist.net/images/anime/8/77831.jpg"},
+    {id:10, title: "Black Clover",url:"https://cdn.myanimelist.net/images/anime/2/88336.jpg"}
+]
 
-    componentDidMount() {
-        fetch('/api/getTitle')
-        .then(res => res.json())
-        .then(titles => this.setState({titles}, () => console.log("Titles fetched", titles)));
-    }
-
-  render() {
-      return(
-        <div>
-        <h2>Titles</h2>
-        <ul>
-            {this.state.titles.map(title => 
-            <li key={title.id}>{title.title}</li>
-            )}
-        </ul>
-      </div>
-      );
-    }
-}
-
-export default Title;
+export default titles;
