@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+
+<% if (matchingTitles.length === 0) { %>
+  <div id="search-not-found">
+    <p>Senpai, we couldn't find it here! :(</p>
+  </div>
+<% } else { %> 
+  <div class="search-result-container row">
+    <% matchingTitles.forEach((item) => { %>
+      <div class="col-lg-3 col-md-4 col-sm-12 card-display">
+        <img class="title-image" src="<%= item.url %>"/>
+        <p class="title-text"><%= item.title %></p>
+        <button class="btn donate-btn">Donate!</button>
+      </div>
+    <%  })%>
+  </div>
+<% } %>
+
+
+<%- include("footer") -%>

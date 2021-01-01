@@ -1,0 +1,119 @@
+body {
+  background-color: #1c1e29;
+  color: #ffffff;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover{
+  color: #3bdeff;
+}
+
+.search-bar {
+  background-color: transparent;
+  border: 1.5px solid #3bdeff;
+  border-left-width: 1.8px;
+  border-right-width: 1.8px;
+  color: white;
+  outline: none;
+  width: 20rem;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  padding: 0 0.4rem;
+  color: #3bdeff;
+}
+
+#search-not-found {
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-result-container {
+  padding: 1.5rem 5rem;
+  width: 100%;
+}
+
+.slogan-container {
+  margin-top: 20%;
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+}
+
+.title-image {
+  height: 350px;
+  width: 263px;
+}
+
+.title-text {
+  margin-top: 0.5rem;
+}
+
+.card-display {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.donate-btn {
+  background-color: #3bdeff;
+  color:#1c1e29;
+}
+
+@media screen and (max-width:1275px) {
+  .title-image {
+    height: 220px;
+    width: 165px;;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .search-bar {
+    max-width: 16rem;
+  }
+
+  .title-image {
+    height: 250px;
+    width: 188px;
+  }
+}
+
+@media screen and (max-width:766px) {
+  .search-bar {
+    max-width: 10rem;
+  }
+
+  .search-button {
+    padding-right: 0.1rem;
+  }
+
+  .title-image {
+    height: 300px;
+    width: 225px;
+  }
+}
