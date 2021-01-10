@@ -20,9 +20,6 @@ body {
   color: #3bdeff;
 }
 
-.navbar-nav>li {
-  display: inline-block;
-}
 
 .search-bar {
   background-color: transparent;
@@ -112,6 +109,12 @@ body {
   .title-image {
     height: 250px;
     width: 188px;
+  }
+  
+  .navbar-nav>li {
+    display: inline-block;
+    float:none;
+    text-align: center;
   }
 }
 
