@@ -20,6 +20,10 @@ body {
   color: #3bdeff;
 }
 
+.navbar-nav>li {
+  display: inline-block;
+}
+
 .search-bar {
   background-color: transparent;
   border: 1.5px solid #3bdeff;
@@ -53,8 +57,10 @@ body {
 }
 
 .slogan-container {
-  margin-top: 20%;
+  margin-top: 10rem;
   text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
 }
 
 #footer {
@@ -83,6 +89,12 @@ body {
 .donate-btn {
   background-color: #3bdeff;
   color:#1c1e29;
+}
+
+#carousel-reccomender {
+  text-align: center;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
 }
 
 @media screen and (max-width:1275px) {
@@ -115,5 +127,9 @@ body {
   .title-image {
     height: 300px;
     width: 225px;
+  }
+
+  #home-link {
+    display: none;
   }
 }

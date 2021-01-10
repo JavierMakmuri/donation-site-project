@@ -1,3 +1,18 @@
+// this is the interim database
+const database = [
+  {title: "Attack On Titan", url:"https://cdn.myanimelist.net/images/anime/10/47347l.jpg"},
+  {title: "Sword Art Online", url:"https://cdn.myanimelist.net/images/anime/11/39717.jpg"},
+  {title: "Naruto", url:"https://cdn.myanimelist.net/images/anime/13/17405.jpg"},
+  {title: "Tokyo Ghoul", url:"https://cdn.myanimelist.net/images/anime/5/64449.jpg"},
+  {title: "Re:Zero", url:"https://cdn.myanimelist.net/images/anime/11/79410.jpg"},
+  {title: "One Piece", url:"https://cdn.myanimelist.net/images/anime/6/73245.jpg"},
+  {title: "My Hero Academia", url:"https://cdn.myanimelist.net/images/anime/10/78745.jpg"},
+  {title: "Demon Slayer", url:"https://cdn.myanimelist.net/images/anime/1286/99889.jpg"},
+  {title: "Konosuba" ,url:"https://cdn.myanimelist.net/images/anime/8/77831.jpg"},
+  {title: "Black Clover", url:"https://cdn.myanimelist.net/images/anime/2/88336.jpg"},
+  {title: "Hunter x Hunter", url:"https://cdn.myanimelist.net/images/anime/11/33657.jpg"}
+]
+
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
@@ -14,21 +29,6 @@ app.set('view engine', 'ejs');
   note: this is done to prevent browser pop-up upon refresh
  */
 var matchingTitles = database;
-
-// this is the interim database
-var database = [
-  {title: "Attack On Titan", url:"https://cdn.myanimelist.net/images/anime/10/47347l.jpg"},
-  {title: "Sword Art Online", url:"https://cdn.myanimelist.net/images/anime/11/39717.jpg"},
-  {title: "Naruto", url:"https://cdn.myanimelist.net/images/anime/13/17405.jpg"},
-  {title: "Tokyo Ghoul", url:"https://cdn.myanimelist.net/images/anime/5/64449.jpg"},
-  {title: "Re:Zero", url:"https://cdn.myanimelist.net/images/anime/11/79410.jpg"},
-  {title: "One Piece", url:"https://cdn.myanimelist.net/images/anime/6/73245.jpg"},
-  {title: "My Hero Academia", url:"https://cdn.myanimelist.net/images/anime/10/78745.jpg"},
-  {title: "Demon Slayer", url:"https://cdn.myanimelist.net/images/anime/1286/99889.jpg"},
-  {title: "Konosuba" ,url:"https://cdn.myanimelist.net/images/anime/8/77831.jpg"},
-  {title: "Black Clover", url:"https://cdn.myanimelist.net/images/anime/2/88336.jpg"},
-  {title: "Hunter x Hunter", url:"https://cdn.myanimelist.net/images/anime/11/33657.jpg"}
-]
 
 
 app.get("/", (req, res) => {
