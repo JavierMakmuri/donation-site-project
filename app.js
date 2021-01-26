@@ -39,16 +39,26 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'ejs');
 
 
-/* 
+/*
   this variable hold the previous search result
   note: this is done to prevent browser pop-up upon refresh
  */
-var matchingTitles = database;
+var matchingTitles = database
+
+function randomize(){
+  for (var a = [0, 1, 2, 3, 4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25], i = a.length; i--; ) {
+  var number = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+  } 
+  return number;
+}
+
+
 
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", {matchingTitles: matchingTitles,random:randomize()});
   matchingTitles = database;
+  random = randomize();
 });
 
 app.get("/about", (req, res)=> {
