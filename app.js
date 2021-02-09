@@ -44,15 +44,18 @@ app.set('view engine', 'ejs');
   note: this is done to prevent browser pop-up upon refresh
  */
 var matchingTitles = database
-
+var random=[]
 function randomize(){
-  for (var a = [0, 1, 2, 3, 4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25], i = a.length; i--; ) {
-  var number = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
-  } 
-  return number;
+  const arr = [];
+  do{
+    const randomNumber = Math.floor(Math.random()*26) + 1;
+    if(!arr.includes(randomNumber))
+    {
+      arr.push(randomNumber);
+    }
+  }while (arr.length<26)
+  return arr;
 }
-
-
 
 
 app.get("/", (req, res) => {

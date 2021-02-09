@@ -142,10 +142,10 @@ body {
 }
 
 .card-image{
-  width:241.5px;
-  height: 80px:
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .card{
-  background-color: #3bdeff;
+  background-color:#1c1e29 ;
 }
