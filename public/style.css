@@ -89,14 +89,14 @@ body {
   color:#1c1e29;
 }
 
-.slider-container {    
+.slider-container {
   max-width: 1000px;
   padding: 2rem 3rem;
-  background: #e6e6e6;
-  margin: 2rem auto 0 auto;
+  /* background: #e6e6e6; */
+  margin: 8rem auto;
   overflow: hidden;
-  border-radius: 5px;    
-  position:relative;
+  border-radius: 5px;
+  position: relative;
 }
 
 .slider-container:before {
@@ -111,8 +111,8 @@ body {
 }
 
 .slider-item {
-  background: grey;
-  border-right: 2px solid #333;
+  /* background: grey;
+  border-right: 2px solid #333; */
   padding: 1.5rem .75rem;
   position: relative;
 }
@@ -134,7 +134,7 @@ body {
   list-style: none;
   position: absolute;
   left: 0;    
-  background: #333;
+  /* background: #333; */
   width: 100%;    
   top: 50%;
   transform: translatey(-50%);
@@ -151,12 +151,11 @@ body {
   cursor: pointer;
 }
 
-.reccomender-card {
+.slider-card {
   text-align: center;    
   margin: 0 auto;
-  max-width: 200px;       
-  color: #333;
-  background: white;
+  max-width: 260px;       
+  color: white;
   border-radius: 5px;
   padding-bottom: .75rem;
   font-family: sans-serif;
@@ -165,20 +164,17 @@ body {
   position: relative;
 }
 
-.reccomender-card img {
-  margin-bottom: .25 rem;
+.slider-card-img {
+  height: 350px;
+  width: 263px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.reccomender-card h2 {
-  margin: 0 0 .25rem;
+.slider-title {
+  margin: 0.8rem 0;
 }
 
-.reccomender-card p {
-  margin: 0;
-  padding: 0 .5rem;
-}
-.reccomender-card:before {
-  content: '.card';
+.slider-card:before {
   position: absolute;
   bottom: 0;
   color: blue;
@@ -189,7 +185,7 @@ body {
 @media screen and (max-width:1275px) {
   .title-image {
     height: 220px;
-    width: 165px;;
+    width: 165px;
   }
 }
 

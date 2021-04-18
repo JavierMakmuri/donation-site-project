@@ -29,7 +29,7 @@ const randomize = (n) => {
 }
 
 // get n random titles from database
-const randomTitles = (n) => {
+const getRandomTitles = (n) => {
   const randomIndices = randomize(n)
 
   return randomIndices.map(i => database[i])
@@ -40,7 +40,9 @@ const randomTitles = (n) => {
  */
 
 app.get("/", (req, res) => {
-  res.render("home", { matchingTitles: matchingTitles, randomTitles: randomTitles(6) });
+  const randomTitles = getRandomTitles(6)
+
+  res.render("home", { matchingTitles: matchingTitles, randomTitles: randomTitles });
   matchingTitles = database;
 });
 

@@ -23,8 +23,7 @@ const database = [
     {title: "Vinland Saga", url: "https://cdn.myanimelist.net/images/anime/1500/103005.jpg"},
     {title: "JoJo's Bizarre Adventure", url: "https://cdn.myanimelist.net/images/anime/3/40409.jpg"},
     {title: "Steins;Gate", url: "https://cdn.myanimelist.net/images/anime/5/73199.jpg"},
-    {title: "My youth romantic comedy is wrong as I expected", url: "https://cdn.myanimelist.net/images/anime/1958/107912.jpg"},
-    {title: "Rascal Does Not Dream of Bunny Girl Senpai", url: "https://cdn.myanimelist.net/images/anime/1301/93586.jpg"}
+    {title: "Oregairu", url: "https://cdn.myanimelist.net/images/anime/1958/107912.jpg"}
 ]
 
 module.exports = database
