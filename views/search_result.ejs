@@ -9,9 +9,9 @@
   <div class="search-result-container row">
     <% matchingTitles.forEach((item) => { %>
       <div class="col-lg-3 col-md-4 col-sm-12 card-display">
-        <img class="" src="<%= item.url %>"/>
+        <img class="title-image" src="<%= item.url %>"/>
         <p class="title-text"><%= item.title %></p>
-        <button class="btn donate-btn">Donate!</button>
+        <button class="btn donate-btn">Donate</button>
       </div>
     <%  })%>
   </div>

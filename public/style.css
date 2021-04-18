@@ -85,8 +85,14 @@ body {
 }
 
 .donate-btn {
-  background-color: #3bdeff;
-  color:#1c1e29;
+  background: #3bdeff;
+  color: #1c1e29;
+}
+
+.donate-btn:hover {
+  color: #1c1e29;
+  background: #11ffff;
+  box-shadow: 0 0 10px #11ffff;
 }
 
 .slider-container {
@@ -223,17 +229,4 @@ body {
   #home-link {
     display: none;
   }
-}
-.carousel-item{
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
-.card-image{
-  height:241.5px;
-  width: 80px;
-}
-
-.card{
-  background-color: #3bdeff;
 }
